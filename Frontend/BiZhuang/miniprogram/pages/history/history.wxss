@@ -1,0 +1,135 @@
+.hs {
+  margin-top: 20rpx;
+  height: 40rpx;
+  background-color: #f0f0f0;
+}
+.hs2 {
+  margin-top: 20rpx;
+  height: 40rpx;
+  background-color: #FFFFFF;
+}
+
+.card {
+  height: 320rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.img image {
+  width: 260rpx;
+  height: 260rpx;
+  margin: 42rpx;
+}
+
+.right {
+  height: 260rpx;
+  /* padding-top: 42rpx; */
+  margin-right: 60rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.price {
+  margin-top: 34rpx;
+  color: #aaaaaa;
+}
+
+.price text {
+  color: #FF0047;
+}
+
+.desc {
+  margin-top: 20rpx;
+  color: rgba(137, 136, 136, 100);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.jgzs-container {
+  margin-top: 26rpx;
+  margin-bottom: 26rpx;
+}
+
+.jgzs {
+  margin-left: 26rpx;
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+  font-family: PingFangSC-bold;
+}
+
+.lszd {
+  margin: 0 auto;
+  margin-top: 14rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 654rpx;
+  height: 48rpx;
+  line-height: 34rpx;
+  border-radius: 8rpx;
+  background-color: #eae9e9;
+  color: rgba(16, 16, 16, 100);
+  font-size: 24rpx;
+  font-family: -apple-system;
+  border: 2rpx solid rgba(255, 255, 255, 100);
+}
+
+.lszd text {
+  color: #F53f72;
+  font-weight: 500;
+  margin-right: 5rpx;
+}
+
+.step-title {
+  color: rgba(16, 16, 16, 100);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.step-time {
+  color: rgba(137, 136, 136, 100);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+  margin-top: 8rpx;
+  margin-bottom: 60rpx;
+}
+
+.l-title {
+  color: #F91655 !important;
+  font-size: 28rpx !important;
+  text-align: left !important;
+  font-family: PingFangSC-bold !important;
+  font-weight: 500 !important;
+}
+
+.l-title-end {
+  color: rgba(137, 136, 136, 100);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.echart{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 640rpx;
+  height: 360rpx;
+}
+.chart{
+  width: 640rpx;
+  height: 400rpx;
+  color: #ccc;
+}

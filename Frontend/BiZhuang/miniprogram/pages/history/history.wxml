@@ -1,0 +1,40 @@
+<view>
+  <view class="hs2"></view>
+  <view class="card" bindtap="gotoDetail">
+    <view class="img">
+      <image src="{{goods_logo}}"></image>
+    </view>
+    <view class="right">
+      <view class="title" bindtap="gotoDetail">
+        {{goods_name}}
+      </view>
+      <view>
+        <view class="price"><text>￥{{goods_price}}</text></view>
+        <view class="desc">{{plat_name}}  {{store_name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="hs"></view>
+  <view class="jgzs-container">
+    <text class="jgzs">价格走势</text>
+    <view class="lszd">历史最低：<text>￥{{goods_price}}</text> ({{min_date}}) ，当前价格是30天最低</view>
+    <view class="echart">
+      <chart chart-class="chart" option="{{ option }}" bindinstance="onInstance" />
+    </view>
+  </view>
+  <view 
+  wx:for="{{priceList}}">
+    <l-steps dot="{{true}}" direction="column" active-index="-1">
+      <l-step title="{{item.price_down}}" l-title-class="l-title">
+        <view class="describe-container" slot="describe">
+          <view class="step-title">
+            {{goods_name}}
+          </view>
+          <view class="step-time">
+            {{item.upd_time}}
+          </view>
+        </view>
+      </l-step>
+    </l-steps>
+  </view>
+</view>

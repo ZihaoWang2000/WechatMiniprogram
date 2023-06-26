@@ -1,0 +1,192 @@
+.line-class {
+  width: 68rpx !important;
+}
+
+.header-line {
+  border-bottom: 0 !important;
+}
+
+.hs {
+  height: 40rpx;
+  background-color:#f0f0f0;
+}
+
+.card {
+  margin-left: 50rpx;
+  height: 240rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img image {
+  width: 200rpx;
+}
+
+.like-list {
+  display: flex;
+}
+
+.right {
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.like-price {
+  margin-top: 34rpx;
+  color: #f50b0b;
+}
+
+.price text {
+  color: red;
+  font-weight: bold;
+}
+
+.title2 {
+  margin-top: 20rpx;
+  text-align: center;
+}
+.pub-btn{
+  position:fixed;
+  bottom:0;
+  height: 70rpx;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 100);
+}
+.all-check{
+  margin-left: 22rpx;
+}
+.finish{
+  padding-right: 50rpx;
+  width: 150rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #898888;
+  font-size: 24rpx;
+}
+.delete-btn{
+  color: #FA7298;
+}
+.all-btn{
+  font-size: 24rpx;
+  color: #898888;
+}
+.choose-container{
+  margin-left: 22rpx;
+}
+.choose-card {
+  height: 240rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.product {
+  position: relative;
+  width: 45%;
+  height: 560rpx;
+  background: white;
+  margin: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15rpx;
+  box-shadow: 0 2rpx 6rpx 0 rgba(0,0,0,0.22);
+}
+
+.product-img {
+  width: 90%;
+  margin-top: 10rpx;
+}
+
+.product-name {
+  font-size: 30rpx;
+  margin: 15rpx;
+  margin-top: -40rpx;
+  overflow: hidden;
+  height: 120rpx;
+  text-overflow: ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.price {
+  position: absolute;
+  float: left;
+  left: 10rpx;
+  bottom: 10rpx;
+  font-size: 30rpx;
+  color: red;
+  font-weight: bold;
+}
+
+.qi {
+  font-size: 25rpx;
+  color: #9B9B9B;
+  font-weight: normal;
+}
+
+.go {
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+  font-size: 28rpx;
+  color: white;
+  background: #FBD841;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  border-radius: 15rpx;
+}
+
+checkbox .wx-checkbox-input {
+	width: 30rpx;
+	height: 30rpx;
+	border-radius: 50%;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #FA7298;
+  border-color:#FA7298;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 20rpx;
+  height: 20rpx;  
+  line-height: 20rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.tips{
+  font-size: 25rpx;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  color:#807878;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

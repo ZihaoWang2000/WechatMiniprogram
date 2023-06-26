@@ -1,0 +1,33 @@
+<view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="搜索商品" value="{{searchValue}}" bindinput='searchValueInput' bindconfirm="SearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{searchValue.length > 0}}" bindtap="SearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="SearchConfirm">
+         <text wx:if="{{searchValue.length>0}}" data-key='search'>搜索</text>
+         <text wx:else data-key='back'>取消</text>
+    </view>
+</view>
+<view class="history">
+  <text style="font-size: 28rpx; margin:20rpx; font-weight:bold">历史记录</text>
+  <view class="history-record">
+    <navigator class="history-record-item" wx:for="{{history}}" url="{{item.url}}" hover-class="none">
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+</view>
+
+<view class="hot">
+  <text style="font-size: 28rpx; margin:20rpx; font-weight:bold">大家都在搜</text>
+  <view class="hot-search">
+    <view class="hot-search-item" wx:for="{{hot}}">
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+

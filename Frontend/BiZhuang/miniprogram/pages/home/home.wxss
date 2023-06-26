@@ -1,0 +1,255 @@
+page {
+  background: #f8f8f8;
+}
+
+.banner-background {
+  position: relative;
+  background: #FA7298;
+  width: 100%;
+  height: 620rpx;
+  border-radius: 0 0 50% 50%;
+}
+
+.fixed-area {
+  background: #FA7298;
+  width: 100%;
+  height: 260rpx;
+  position: fixed;
+  z-index:10;
+}
+
+.search {
+  position: absolute;
+  left: 50%;
+  top: 270rpx;
+  transform: translate(-50%);
+  width: 100%;
+}
+
+.ad{
+  position: fixed;
+  width: 30%;
+  left: -10rpx;
+}
+
+.english-ad {
+  position: fixed;
+  width: 70%;
+  top:170rpx;
+}
+
+.weui-search-bar {
+  position: relative;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+
+}
+.weui-icon-search {
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9b9b9b;
+  background: #fff;
+  line-height: 28px;
+}
+
+.banner {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto; 
+  width:700rpx; 
+  height: 262.5rpx; 
+  box-shadow: 0 2rpx 6rpx 0 rgba(0,0,0,0.22);
+  border-radius: 15rpx;
+}
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  width: 95%;
+  margin-top: 30rpx;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  padding: 15rpx;
+  text-align: center;
+  width: 17%;
+  font-size: 26rpx;
+}
+
+.brand-img {
+  display: flex;
+  justify-content: center;
+  background: white;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  border-radius: 50%;
+  box-shadow: 0 2rpx 6rpx 0 rgba(0,0,0,0.44);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.product {
+  position: relative;
+  width: 45%;
+  height: 560rpx;
+  background: white;
+  margin: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15rpx;
+  box-shadow: 0 2rpx 6rpx 0 rgba(0,0,0,0.22);
+}
+
+.product-img {
+  width: 90%;
+  margin-top: 10rpx;
+}
+
+.product-name {
+  font-size: 30rpx;
+  margin: 15rpx;
+  margin-top: -40rpx;
+  overflow: hidden;
+  height: 120rpx;
+  text-overflow: ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.price {
+  position: absolute;
+  float: left;
+  left: 10rpx;
+  bottom: 10rpx;
+  font-size: 30rpx;
+  color: red;
+  font-weight: bold;
+}
+
+.qi {
+  font-size: 25rpx;
+  color: #9B9B9B;
+  font-weight: normal;
+}
+
+.go {
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+  font-size: 28rpx;
+  color: white;
+  background: #FBD841;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  border-radius: 15rpx;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 10rpx;
+  right: 0;
+  left: 0;
+  display:flex;
+  align-items: center;
+  margin: auto;
+  width:90%;
+  height:70rpx;
+  background: rgba(16,16,16,0.78);
+  color: white;
+  font-size: 28rpx;
+  border-radius: 35rpx;
+  z-index: 10;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 25% !important;
+  float: right;
+  background: #FA7298;
+  color:white;
+  font-size: 25rpx !important;
+  font-weight: normal;
+  border-radius: 20rpx;
+  margin-left:auto;
+  margin-right: 20rpx !important;
+}
+
+.tips{
+  font-size: 25rpx;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  color:#807878;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

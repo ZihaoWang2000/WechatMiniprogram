@@ -1,0 +1,21 @@
+<view class="top-area"></view>
+<view class="questions">
+  <text class="question">1、我搜不到想要的商品？</text>
+  <view class="divLine"></view>
+  <view class="answer">·由于“比妆”小程序目前正处于初步上线测试阶段，数据库中的所有商品信息都是在一定时间内获取的，所以商品数量有限。如果您找不到您所需要的商品，可以尝试修改关键词，商品数据库中只存在【分类】页中【品牌分类】和【商品分类】的商品类型数据，如果您想搜索的商品不处于这些分类中，那么搜索结果也无法满足您的需求。</view>
+</view>
+<view class="questions">
+  <text class="question">2、是否能有更多平台的商品数据？</text>
+  <view class="divLine"></view>
+  <view class="answer">·目前在系统数据库中，只包含苏宁易购、京东和唯品会三个平台的商品数据，未来我们会更新技术手段并添加更多平台，如天猫、心心等。</view>
+  <view class="answer">·目前您可以根据三个平台不同的店铺进行比较。</view>
+</view>
+<view class="questions">
+  <text class="question">3、点击某平台的商品能否跳转到该平台？</text>
+  <view class="divLine"></view>
+  <view class="answer">·客户您好，由于微信小程序在2021年5月之后不支持小程序直接跳转APP，所以该功能目前无法实现。</view>
+</view>
+<view style="display:flex;align-items:center;justify-content:center;">
+  <image src="../../images/bizhuang.png" style="margin-bottom:10px; width:50%" mode="widthFix"></image>
+</view>
+<view class="bottom">---更多问题，请联系1185713860@qq.com---</view>

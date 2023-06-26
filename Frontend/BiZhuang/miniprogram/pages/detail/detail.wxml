@@ -1,0 +1,51 @@
+<view>
+
+  <l-segment bind:linchange="changeTabs" l-line-class="line-class" active-color="#FA7298" inactive-color="#101010"
+    animated-for-line="true">
+    <l-segment-item tab="基本信息" key="one" />
+    <l-segment-item tab="价格走势" key="two" />
+  </l-segment>
+  <view class="one" style="height: {{dh}}rpx" >
+
+    <view class="banner-container">
+      <image src="{{goods_img}}"></image>
+    </view>
+
+    <view class="price-container">
+      <view class="price">¥ <text>{{goods_price}}</text> 起</view>
+      <view wx:if="{{!islike}}" class="shoucang" bindtap="AddLike"><text>+ 收 藏</text></view>
+      <view wx:else class="shoucang" bindtap="DeleteLike"><text style="color: #FA7298">已 收 藏</text></view>
+    </view>
+
+  </view>
+ 
+  <view class="price-goodsname">
+    <text>{{goods_name}}</text>
+  </view>
+
+  <view class="price-zs">
+    <image src="cloud://cloud1-1gfk562j1135973f.636c-cloud1-1gfk562j1135973f-1305500910/image/imgs/zs.jpg"></image>
+    <text>价格走势</text>
+  </view>
+
+  <view class="zs-container"
+  wx:for="{{goodsList}}"
+  wx:key="goods_id">
+    <view class="card">
+      <view class="left">
+        <view class="icon">
+          <image src="{{item.plat_logo}}"></image>
+        </view>
+        <view class="shop-name">{{item.store_name}}</view>
+      </view>
+      <view class="right">
+        <view class="shop-price">¥{{item.goods_price}}</view>
+        <navigator class="ck-container" 
+        url = '/pages/history/history?goods_id={{item.goods_id}}' hover-class="none">
+          <text>查看历史价格</text>
+          <image src="cloud://cloud1-1gfk562j1135973f.636c-cloud1-1gfk562j1135973f-1305500910/image/imgs/yjt.jpg"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

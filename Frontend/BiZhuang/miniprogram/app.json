@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/category/category",
+    "pages/like/like",
+    "pages/detail/detail",
+    "pages/history/history",
+    "pages/my/my",
+    "pages/goods_list/goods_list",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundColor": "#FA7298",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FA7298",
+    "navigationBarTitleText": "比妆",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "l-tabs": "/miniprogram_npm/lin-ui/tabs/index",
+    "l-tabpanel": "/miniprogram_npm/lin-ui/tabpanel/index",
+    "l-segment": "/miniprogram_npm/lin-ui/segment/index",
+    "l-segment-item": "/miniprogram_npm/lin-ui/segment-item/index",
+    "l-steps": "/miniprogram_npm/lin-ui/steps/index",
+    "l-step": "/miniprogram_npm/lin-ui/step/index",
+    "l-radio-group": "/miniprogram_npm/lin-ui/radio-group/index",
+    "l-radio": "/miniprogram_npm/lin-ui/radio/index"
+  },
+  "plugins": {
+    "echarts": {
+      "version": "1.0.3",
+      "provider": "wx1db9e5ab1149ea03"
+    }
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#333333",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/category.png",
+        "selectedIconPath": "images/category-selected.png"
+      },
+      {
+        "pagePath": "pages/like/like",
+        "text": "收藏",
+        "iconPath": "images/like.png",
+        "selectedIconPath": "images/like-selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,172 @@
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 600rpx;
+}
+
+.banner-container image {
+  margin-left: 10rpx;
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.price-container {
+  margin-left: -5rpx;
+  width: 755rpx;
+  height: 140rpx;
+  background-color: rgba(250, 114, 152, 100);
+  color: rgba(16, 16, 16, 100);
+  font-size: 28rpx;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 100);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price {
+  font-size: 28rpx;
+  color: #ffffff;
+}
+
+.price text {
+  font-size: 60rpx;
+  font-weight: 400;
+}
+
+.shoucang {
+  width: 160rpx;
+  height: 50rpx;
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 100);
+  border-radius: 128rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoucang text{
+  font-size: 26rpx;
+  color: #101010;
+  font-weight: bold;
+}
+
+.price-goodsname {
+  display: flex;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid rgba(255, 255, 255, 100);
+  padding: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:4; 
+}
+
+.price-goodsname text{
+  font-size: 32rpx;
+  color: #101010;
+  font-weight: bold;
+}
+
+.price-zs {
+  height: 92rpx;
+  line-height: 40rpx;
+  background-color: #f0f0f0;
+  text-align: center;
+  border: 2rpx solid rgba(255, 255, 255, 100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20rpx;
+}
+.price-zs image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.price-zs text{
+  margin-left: 14rpx;
+  color: #000000;
+}
+.line-class{
+  width: 68rpx !important;
+}
+.zs-container{
+  width: 100%;
+}
+.card{
+  height: 120rpx;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 20rpx solid rgba(255, 255, 255, 100);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+}
+.icon image{
+  width: 52rpx;
+  height: 52rpx;
+}
+.shop-name{
+  margin-left: 18rpx;
+  font-size: 24rpx;
+}
+.shop-price{
+  font-size: 24rpx;
+  font-family: PingFangSC-bold;
+  color: rgba(250, 114, 152, 100);
+}
+.ck-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ck-container text{
+  color: rgba(186, 182, 182, 100);
+  font-size: 24rpx;
+  font-family: PingFangSC-regular;
+}
+.ck-container image{
+  margin-left: 5rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
+.left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:320rpx;
+}
+
+.right{
+  width: 320rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.one{
+  transition:.5s;
+  overflow:hidden
+}
+
+@keyframes one {
+  0% {
+      transform-origin: top;
+      height: 0;
+      transform: perspective(100px) rotateX(-10deg);
+  }
+  100% {
+      transform: perspective(100px) rotateX(0deg);
+      height: 80px;
+  }
+}

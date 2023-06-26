@@ -1,0 +1,59 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "分类",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "cid=3",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "cid=3",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "cid=4",
+          "scene": null
+        },
+        {
+          "name": "搜索结果",
+          "pathName": "pages/content/content",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/like/like",
+          "pathName": "pages/like/like",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

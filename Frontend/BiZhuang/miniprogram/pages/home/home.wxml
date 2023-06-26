@@ -1,0 +1,71 @@
+<view class='banner-background'>
+  <view class="fixed-area">
+    <image src="cloud://cloud1-1gfk562j1135973f.636c-cloud1-1gfk562j1135973f-1305500910/image/home/ad.png" class='ad' mode='widthFix' style="{{'top:' + height + 'px'}}"></image>
+    <image src="cloud://cloud1-1gfk562j1135973f.636c-cloud1-1gfk562j1135973f-1305500910/image/home/english_ad.png" class='english-ad' mode='widthFix'></image>
+  </view>
+  <view class="search">
+    <navigator class="weui-search-bar" url="../../pages/search/search" hover-class="none">
+       <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索商品" value="{{SearchData.value}}" bindinput='SearchInput' bindconfirm="SearchConfirm" />
+          <view class="weui-icon-clear" wx:if="{{SearchData.value.length > 0}}" bindtap="SearchClear">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="banner">
+    <swiper indicator-dots="true"	autoplay="true" circular="true" interval="3000"	indicator-active-color="#FA7298" style="width:100%; height:100%">
+      <swiper-item wx:for="{{banner}}">
+        <image src="{{item}}" mode="heightFix" style="height:100%; border-radius: 15rpx"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+
+<view class="brands">
+  <navigator class="brand" url="/pages/category/category" hover-class="none">
+    <view class="brand-img" style="background: #FA7298">
+      <image src="cloud://cloud1-1gfk562j1135973f.636c-cloud1-1gfk562j1135973f-1305500910/image/home/all-brands.png" mode="widthFix" style="width: 100%"></image>
+    </view>
+    全部品牌
+  </navigator>
+  <navigator class="brand" wx:for="{{brand1}}" hover-class="none">
+    <navigator class="brand-img" url="/pages/goods_list/goods_list?gcat_id=0&bcat_id={{item.bcat_id}}&cat_name={{item.name}}" hover-class="none">
+      <image src="{{item.src}}" mode="widthFix" style="width: 100%; border-radius: 50%"></image>
+    </navigator>
+    {{item.name}}
+  </navigator>
+</view>
+<view class="brands" style="margin-top:0">
+  <view class="brand" wx:for="{{brand2}}">
+    <navigator class="brand-img" url="/pages/goods_list/goods_list?gcat_id=0&bcat_id={{item.bcat_id}}&cat_name={{item.name}}" hover-class="none">
+      <image src="{{item.src}}" mode="widthFix" style="width: 100%; border-radius: 50%"></image>
+    </navigator>
+    {{item.name}}
+  </view>
+</view>
+<view style="margin-top:40rpx; margin-bottom: -10rpx; display: flex; justify-content: center">
+  <image src="cloud://cloud1-1gfk562j1135973f.636c-cloud1-1gfk562j1135973f-1305500910/image/home/popular.png" mode="widthFix" style="width: 50%"></image>
+</view>
+<view class="products">
+  <navigator class="product" 
+  wx:for="{{product_img}}"
+  url='/pages/detail/detail?item_id={{item.item_id}}'>
+    <view class="product-img">
+      <image src="{{item.url}}" class="product-img" mode="widthFix" style="width:100%"></image>
+    </view>
+    <text class="product-name">{{item.name}}</text>
+    <view class="price">{{item.price}}
+      <text class="qi">起</text>
+    </view>
+    <view class="go">GO>></view>
+  </navigator>
+</view>
+<view class="bottom" wx:if="{{!hasLogin}}">
+  <text style="margin-left:30rpx">登录查看更多爆款商品</text>
+  <view class="login-button" bindtap="getUserProfile">立即登录</view>
+</view>
+<view class="tips">- 我是有底线的 -</view>

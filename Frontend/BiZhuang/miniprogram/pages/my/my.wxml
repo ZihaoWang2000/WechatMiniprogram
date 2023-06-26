@@ -1,0 +1,41 @@
+<view class="background">
+  <view class="user">
+    <view class="login-area" bindtap="getUserProfile">
+      <view class="userhead-container">
+        <image src="{{userInfo.avatarUrl}}" class="userhead" mode="widthFix"></image>
+      </view>
+      <view><text class="username">{{userInfo.nickName}}</text></view></view>
+    <view wx:if="{{hasLogin}}" class="manage">账号管理
+    <icon class="iconfont icon-arrow-right-circle"></icon>
+  </view>
+  </view>
+  <view class="vip-area">
+    <text style="color: #E3C59E;line-height:90rpx">会员</text>
+    <text style="color: #9F9492; margin-left: 30rpx; line-height:90rpx; font-size: 0.9rem">升级会员享更多功能</text>
+    <view class="vip-detail">详情</view>
+  </view>
+</view>
+<view class="setting-board">
+  <view class="setting">
+    <icon class="iconfont icon-kefu" style="margin-right:10rpx; color: #AF237C"></icon>
+    在线客服
+    <icon class="iconfont icon-arrow-right-circle" style="float:right"></icon>
+  </view>
+  <view class="setting" bindtap="goHelp">
+    <icon class="iconfont icon-wenti" style="margin-right:10rpx; color: #AF237C"></icon>
+    常见问题
+    <icon class="iconfont icon-arrow-right-circle" style="float:right"></icon>
+  </view>
+  <view class="setting">
+    <icon class="iconfont icon-xiaoxi" style="margin-right:10rpx; color: #AF237C"></icon>
+    意见反馈
+    <icon class="iconfont icon-arrow-right-circle" style="float:right"></icon>
+  </view>
+  <view class="setting">
+    <icon class="iconfont icon-setting-filling" style="margin-right:10rpx; color: #AF237C"></icon>
+    设置
+    <icon class="iconfont icon-arrow-right-circle" style="float:right"></icon>
+  </view>
+</view>
+
+

@@ -1,0 +1,92 @@
+.weui-search-bar {
+  position: relative;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 40rpx;
+}
+.weui-icon-search {
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.07);
+  border: 1rpx solid #e6e6ea;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9b9b9b;
+  background: #fff;
+  line-height: 28px;
+}
+
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  font-size:14px;
+  line-height: 28px;
+  color: black;
+  white-space: nowrap;
+}
+
+.history-record, .hot-search {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.history-record-item, .hot-search-item {
+  padding:10rpx 30rpx 10rpx 30rpx;
+  background: rgba(0,0,0,0.13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx;
+  border-radius: 30rpx;
+  font-size:28rpx
+}
+
+.history, .hot {
+  margin-top: 20rpx;
+}

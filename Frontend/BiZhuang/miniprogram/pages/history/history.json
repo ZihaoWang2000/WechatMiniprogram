@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "chart": "plugin://echarts/chart"
+  },
+  "navigationBarTitleText": "历史价格"
+}

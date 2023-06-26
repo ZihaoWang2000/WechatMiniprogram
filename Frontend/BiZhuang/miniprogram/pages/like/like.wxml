@@ -1,0 +1,34 @@
+<view>
+    <view>
+      <view wx:for="{{like_list}}" bindtouchstart="touchStart" bindtouchend="touchEnd" class="card" data-name="{{item.item_id}}" hover-class="none">
+        <view class="img">
+          <image src="{{item.url}}"  mode="widthFix"></image>
+        </view>
+        <view class="right">
+          <view class="title">
+            {{item.name}}
+          </view>
+          <view class="like-price">
+            <text>{{item.price}}</text> 起
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="hs"></view>
+    <view class="title2">你可能还喜欢~</view>
+    <view class="products">
+  <navigator class="product" 
+  wx:for="{{product_img}}"
+  url='/pages/detail/detail?item_id={{item.item_id}}' hover-class="none">
+    <view class="product-img">
+      <image src="{{item.url}}" class="product-img" mode="widthFix" style="width:100%"></image>
+    </view>
+    <text class="product-name">{{item.name}}</text>
+    <view class="price">{{item.price}}
+      <text class="qi" style="color: #9B9B9B; font-weight: normal;">起</text>
+    </view>
+    <view class="go">GO>></view>
+  </navigator>
+</view>
+  </view>
+<view class="tips">- 我是有底线的 -</view>
